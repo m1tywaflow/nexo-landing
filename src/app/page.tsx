@@ -459,12 +459,6 @@ export default function NexoLanding() {
           <Mark className="w-[26px] h-[26px]" />
           NEXO
         </div>
-        <div className="flex gap-6 text-[#b8b0d6] text-[0.86rem]">
-          <a href="#features" className="hover:text-white transition-colors">Features</a>
-          <a href="#how" className="hover:text-white transition-colors">How it works</a>
-          <a href="#rules" className="hover:text-white transition-colors">Rules</a>
-          <a href="#faq" className="hover:text-white transition-colors">FAQ</a>
-        </div>
         <div className="text-[#7d7599] text-[0.82rem]">© 2026 Nexo. Built for real conversations.</div>
       </footer>
     </div>
@@ -546,7 +540,6 @@ function Faq({ q, children, defaultOpen }: { q: string; children: React.ReactNod
   );
 }
 
-/* ---------------- icons ---------------- */
 
 function Mark({ className }: { className?: string }) {
   return (
