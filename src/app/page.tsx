@@ -191,6 +191,8 @@ export default function NexoLanding() {
         </div>
         <div className="hidden md:flex gap-[30px] text-[0.92rem] text-[#b8b0d6]">
           <a href="#features" className="hover:text-white transition-colors">Features</a>
+          <a href="#interface" className="hover:text-white transition-colors">Interface</a>
+          <a href="#communities" className="hover:text-white transition-colors">Groups & channels</a>
           <a href="#how" className="hover:text-white transition-colors">How it works</a>
           <a href="#rules" className="hover:text-white transition-colors">Rules</a>
           <a href="#faq" className="hover:text-white transition-colors">FAQ</a>
@@ -332,6 +334,115 @@ export default function NexoLanding() {
                 Say more with expressions made for how you actually talk, and share photos, video, and
                 files without losing quality.
               </TiltCard>
+            </div>
+          </div>
+        </section>
+
+        {/* INTERFACE SHOWCASE */}
+        <section id="interface" className="px-[min(6vw,90px)] py-[120px]">
+          <div className="max-w-[1200px] mx-auto">
+            <div className="reveal max-w-[640px] mb-14">
+              <span className="block text-[#a996ff] text-[0.86rem] font-semibold mb-3.5">See it in action</span>
+              <h2 className="text-[clamp(1.9rem,3.4vw,2.7rem)] font-bold" style={{ fontFamily: "'Bricolage Grotesque', sans-serif" }}>
+                One interface, every device.
+              </h2>
+              <p className="mt-4 text-[#b8b0d6] text-[1.02rem] leading-relaxed max-w-[52ch]">
+                Desktop, mobile, and calls — Nexo looks and feels the same wherever you open it.
+              </p>
+            </div>
+
+            <div className="reveal showcase-frame relative rounded-[28px] border border-[rgba(168,150,255,0.14)] overflow-hidden">
+              <Image
+                src="/interface.png"
+                alt="Nexo interface shown on desktop and mobile"
+                width={1819}
+                height={865}
+                sizes="(min-width: 1200px) 1200px, 92vw"
+                className="w-full h-auto block"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* CUSTOMIZATION SHOWCASE */}
+        <section id="customize" className="px-[min(6vw,90px)] py-[120px]">
+          <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_1.1fr] gap-10 lg:gap-14 items-center">
+            <div className="reveal order-2 lg:order-1">
+              <span className="block text-[#a996ff] text-[0.86rem] font-semibold mb-3.5">Make it yours</span>
+              <h2 className="text-[clamp(1.9rem,3.4vw,2.7rem)] font-bold" style={{ fontFamily: "'Bricolage Grotesque', sans-serif" }}>
+                Customize every corner of your profile.
+              </h2>
+              <p className="mt-4 text-[#b8b0d6] text-[1.02rem] leading-relaxed max-w-[46ch]">
+                Banners, avatar borders, decorations, card colors — build a profile that actually looks
+                like you, not like everyone else.
+              </p>
+              <div className="mt-8 flex flex-col gap-4">
+                <CustomizeBullet icon={<ImageIcon className="w-[18px] h-[18px] text-[#a996ff]" />} title="Banners & avatar borders">
+                  Pick from curated sets or drop in your own.
+                </CustomizeBullet>
+                <CustomizeBullet icon={<SmileIcon className="w-[18px] h-[18px] text-[#a996ff]" />} title="Decorations">
+                  Frame your avatar with animated extras.
+                </CustomizeBullet>
+                <CustomizeBullet icon={<GroupIcon className="w-[18px] h-[18px] text-[#a996ff]" />} title="Card colors">
+                  Match your profile card to your vibe.
+                </CustomizeBullet>
+              </div>
+            </div>
+
+            <div className="reveal showcase-frame relative rounded-[28px] border border-[rgba(168,150,255,0.14)] overflow-hidden order-1 lg:order-2">
+              <Image
+                src="/customise.png"
+                alt="Nexo profile customization panel"
+                width={1672}
+                height={941}
+                sizes="(min-width: 1024px) 640px, 92vw"
+                className="w-full h-auto block"
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* GROUPS & CHANNELS — MEGA SHOWCASE */}
+        <section id="communities" className="relative px-[min(6vw,90px)] py-[130px] overflow-hidden">
+          <div className="mega-glow mega-glow-a" />
+          <div className="mega-glow mega-glow-b" />
+
+          <div className="relative max-w-[1200px] mx-auto">
+            <div className="reveal flex flex-col items-center text-center mb-14">
+              <span className="inline-flex items-center gap-2 rounded-full border border-[rgba(168,150,255,0.22)] bg-[rgba(124,92,255,0.1)] pl-3 pr-4 py-2 text-[0.82rem] text-[#a996ff] mb-6">
+                <GroupIcon className="w-3.5 h-3.5" />
+                Built for communities
+              </span>
+              <h2
+                className="text-[clamp(2.1rem,4.4vw,3.4rem)] font-bold max-w-[18ch] leading-[1.08]"
+                style={{ fontFamily: "'Bricolage Grotesque', sans-serif" }}
+              >
+                From a small squad to a
+                <span className="bg-[linear-gradient(100deg,#a996ff,#7c5cff_55%,#5b3df0)] bg-clip-text text-transparent"> 48,000-subscriber</span> broadcast.
+              </h2>
+              <p className="mt-5 text-[#b8b0d6] text-[1.05rem] leading-relaxed max-w-[56ch]">
+                Groups keep your people close. Channels put you in front of everyone who cares — with
+                the same fast, private core underneath both.
+              </p>
+            </div>
+
+            <div className="reveal mega-frame relative rounded-[32px] p-[1.5px] mb-14" style={{ perspective: '1400px' }}>
+              <div className="mega-frame-inner relative rounded-[30px] overflow-hidden">
+                <Image
+                  src="/channels-and-groups.png"
+                  alt="Nexo groups and channels interface"
+                  width={1672}
+                  height={941}
+                  sizes="(min-width: 1200px) 1200px, 92vw"
+                  className="w-full h-auto block"
+                />
+              </div>
+            </div>
+
+            <div className="reveal grid grid-cols-1 sm:grid-cols-3 gap-5">
+              <MegaStat icon={<GroupIcon className="w-5 h-5" />} title="Groups" value="Unlimited members" note="Shared files, pinned plans, group calls." />
+              <MegaStat icon={<BoltIcon className="w-5 h-5" />} title="Channels" value="Broadcast to thousands" note="Reactions, comments, and post history." />
+              <MegaStat icon={<ShieldIcon className="w-5 h-5" />} title="Control" value="Admin tools included" note="Moderation that scales with the community." />
             </div>
           </div>
         </section>
@@ -496,6 +607,33 @@ function TiltCard({
       <p className="text-[0.92rem] text-[#b8b0d6] leading-relaxed" style={{ transform: 'translateZ(18px)' }}>
         {children}
       </p>
+    </div>
+  );
+}
+
+function CustomizeBullet({ icon, title, children }: { icon: React.ReactNode; title: string; children: React.ReactNode }) {
+  return (
+    <div className="flex items-start gap-3.5">
+      <div className="w-9 h-9 rounded-lg flex items-center justify-center border border-[rgba(168,150,255,0.14)] bg-[rgba(124,92,255,0.1)] flex-none mt-0.5">
+        {icon}
+      </div>
+      <div>
+        <div className="text-[0.94rem] font-semibold mb-0.5">{title}</div>
+        <div className="text-[0.86rem] text-[#7d7599] leading-relaxed">{children}</div>
+      </div>
+    </div>
+  );
+}
+
+function MegaStat({ icon, title, value, note }: { icon: React.ReactNode; title: string; value: string; note: string }) {
+  return (
+    <div className="mega-stat rounded-[20px] border border-[rgba(168,150,255,0.14)] p-6">
+      <div className="w-10 h-10 rounded-xl flex items-center justify-center border border-[rgba(168,150,255,0.18)] bg-[rgba(124,92,255,0.14)] text-[#a996ff] mb-4">
+        {icon}
+      </div>
+      <div className="text-[0.8rem] text-[#a996ff] font-semibold mb-1.5">{title}</div>
+      <div className="text-[1.06rem] font-semibold mb-1.5" style={{ fontFamily: "'Bricolage Grotesque', sans-serif" }}>{value}</div>
+      <p className="text-[0.86rem] text-[#7d7599] leading-relaxed">{note}</p>
     </div>
   );
 }
@@ -698,6 +836,28 @@ const nexoStyles = `
   opacity:0; transition: opacity .3s; pointer-events:none;
 }
 .nexo-landing .tilt-card:hover::before { opacity:1; }
+
+.nexo-landing .showcase-frame {
+  background: linear-gradient(160deg, rgba(255,255,255,0.035), rgba(255,255,255,0.008));
+  box-shadow: 0 40px 90px -40px rgba(91,61,240,0.45), 0 0 0 1px rgba(255,255,255,0.02) inset;
+  transition: transform .35s cubic-bezier(.16,.84,.32,1), box-shadow .35s;
+}
+.nexo-landing .showcase-frame:hover { transform: translateY(-4px); box-shadow: 0 50px 110px -40px rgba(91,61,240,0.6), 0 0 0 1px rgba(255,255,255,0.03) inset; }
+
+.nexo-landing .mega-glow { position:absolute; border-radius:50%; filter: blur(120px); pointer-events:none; z-index:0; }
+.nexo-landing .mega-glow-a { width:680px; height:680px; top:-160px; left:50%; transform: translateX(-70%); background: radial-gradient(circle, rgba(124,92,255,0.32), transparent 70%); }
+.nexo-landing .mega-glow-b { width:520px; height:520px; bottom:-180px; right:8%; background: radial-gradient(circle, rgba(91,61,240,0.28), transparent 70%); }
+
+.nexo-landing .mega-frame { background: linear-gradient(135deg, rgba(169,150,255,0.55), rgba(91,61,240,0.15) 40%, rgba(169,150,255,0.4)); animation: nexo-rise .9s cubic-bezier(.16,.84,.32,1) .1s both; }
+.nexo-landing .mega-frame-inner {
+  background: #0a0714;
+  box-shadow: 0 60px 130px -50px rgba(91,61,240,0.65), 0 0 0 1px rgba(255,255,255,0.02) inset;
+  transition: transform .5s cubic-bezier(.16,.84,.32,1), box-shadow .5s;
+}
+.nexo-landing .mega-frame:hover .mega-frame-inner { transform: scale(1.012) translateY(-6px); box-shadow: 0 80px 160px -50px rgba(91,61,240,0.8), 0 0 0 1px rgba(255,255,255,0.04) inset; }
+
+.nexo-landing .mega-stat { background: linear-gradient(160deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01)); transition: transform .3s cubic-bezier(.16,.84,.32,1), border-color .3s, box-shadow .3s; }
+.nexo-landing .mega-stat:hover { transform: translateY(-3px); border-color: rgba(169,150,255,0.4); box-shadow: 0 24px 50px -26px rgba(91,61,240,0.55); }
 
 .nexo-landing .steps-line path { stroke:#a996ff; stroke-width:2; fill:none; stroke-dasharray:1000; stroke-dashoffset:1000; transition: stroke-dashoffset 1.4s cubic-bezier(.16,.84,.32,1); }
 .nexo-landing .steps-line.in-view path { stroke-dashoffset:0; }
